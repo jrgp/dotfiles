@@ -2,3 +2,4 @@ term screen-256color
 vbell off
 startup_message off
 
+# I still prefer screen to tmux, and I don't like fancy captions
