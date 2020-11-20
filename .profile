@@ -13,3 +13,6 @@ alias xjoin="xargs | sed 's/ /,/g'"
 alias vd='svn diff | vimdiff - '
 
 export EDITOR=vim
+
+# Silence mac's deprecated bash warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
