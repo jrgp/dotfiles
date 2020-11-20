@@ -11,6 +11,7 @@ export HISTCONTROL=ignoredups
 # misc helpers
 alias xjoin="xargs | sed 's/ /,/g'"
 alias vd='svn diff | vimdiff - '
+alias s=ssh
 
 export EDITOR=vim
 
