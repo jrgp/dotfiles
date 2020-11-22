@@ -15,5 +15,15 @@ alias s=ssh
 
 export EDITOR=vim
 
-# Silence mac's deprecated bash warning
-export BASH_SILENCE_DEPRECATION_WARNING=1
+if [[ `uname` == 'Darwin' ]]; then
+
+  # Silence mac's deprecated bash warning
+  export BASH_SILENCE_DEPRECATION_WARNING=1
+
+  # Colorized ls on bsd, if we don't have gnu coreutils
+  # setup
+  if [[ `which ls` == '/bin/ls' ]]; then
+    alias ls='ls -FG'
+  fi
+
+fi
