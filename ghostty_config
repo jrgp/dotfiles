@@ -1,0 +1,18 @@
+# Try to make Ghostty look like my favorite Apple terminal setup
+
+# I really like consolas
+font-family = Consolas
+
+# Fix some apps not having proper colors
+term = xterm-256color
+
+# I love nord
+theme = nord
+
+# Enable link matching. Not enabled by default?
+link-url
+
+# These make it look closer to Terminal.app
+font-thicken
+window-padding-x = 5
+macos-titlebar-style = native
