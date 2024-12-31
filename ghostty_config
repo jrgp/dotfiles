@@ -1,4 +1,8 @@
 # Try to make Ghostty look like my favorite Apple terminal setup
+# - Joe 12/31/24
+#
+# mkdir ~/.config/ghostty/ && cd ~/.config/ghostty/ && ln -s ~/dev/dotfiles/ghostty_config config
+#
 
 # I really like consolas
 font-family = Consolas
