@@ -1,9 +1,16 @@
+execute pathogen#infect()
+"filetype plugin indent on
+
+
 syntax on
 set number
 set hlsearch
 set tabstop=2 shiftwidth=2 expandtab
 set autoindent
 autocmd FileType python autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType php autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType c autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd BufNewFile,BufRead *.cr set syntax=ruby
 set ignorecase
 set ruler 
 
@@ -17,7 +24,6 @@ set hlsearch
 
 set directory=$HOME/.vim_swaps/
 
-execute pathogen#infect()
 
 if exists('&signcolumn')  " Vim 7.4.2201
   set signcolumn=yes
@@ -31,6 +37,7 @@ let g:go_highlight_fields = 1
 let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+let g:go_fmt_autosave = 1
 
 
 if has('gui_running')
