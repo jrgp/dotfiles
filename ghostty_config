@@ -1,4 +1,4 @@
-# Try to make Ghostty look like my favorite Apple terminal setup
+# Try to make Ghostty look like my favorite Apple Terminal.app setup
 # - Joe 12/31/24
 #
 # mkdir ~/.config/ghostty/ && cd ~/.config/ghostty/ && ln -s ~/dev/dotfiles/ghostty_config config
@@ -20,3 +20,25 @@ link-url
 font-thicken
 window-padding-x = 5
 macos-titlebar-style = native
+
+# Mimic Terminal.app's selection BG with nord
+selection-background = 424b5f
+
+# Mimic Terminal.app's selection FG with nord and white text.
+# Making it match exactly would require Ghostty not changing FG
+# text
+selection-foreground = d9dee9
+
+# I <3 bash + get tab titles working
+command = /opt/homebrew/bin/bash
+shell-integration = bash
+shell-integration-features = title
+
+# TODO: Doesn't seem to work? With bash shell integration enabled, I get a line instead
+# of a block
+cursor-style = block
+
+# Missing TODO:
+# - Make selection-foreground no-op
+# - Make right clicking links (without cmd+) have a context menu with Copy and Open buttons
+# - Make mouse cursor standard text selection icon not pointer
